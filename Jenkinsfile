@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build images'){
             steps {
-                sh "docker build -t flask-app ~/Jenkins-Practice/Jenkins-Practice2/Task1"
+                sh "docker build -t flask-app ."
             }
         }
 
