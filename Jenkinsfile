@@ -11,6 +11,11 @@ pipeline {
                 sh 'docker build -t flask-app .'
             }
         }
+        stage('Say hello'){
+            steps {
+                sh 'echo "hi friends!"'
+            }
+        }
 
         stage('Run container'){
             steps {
